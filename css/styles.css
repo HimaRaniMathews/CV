@@ -85,7 +85,8 @@ padding: 0px 350px;
   width: 40%;
 }
 .content-box{
-  padding:20px 30px 20px 70px;
+  padding:10px 70px 20px 80px;
+  margin: 10px 40px;
 }
 
 img {
@@ -101,7 +102,7 @@ img {
 }
 .imgdiv{
   padding: 40px 50px 20px 0px;
-  margin : 80px auto 20px auto ;
+  margin : 100px auto 20px auto ;
 }
 
 /*------------------------SECTION 4---------------------------------*/
