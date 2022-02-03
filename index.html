@@ -13,17 +13,35 @@
 </head>
 
 <body>
+
+  <div class="container-1" id="home">
+    <a href="#" class="logo">My Portfolio</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();"><i class="fa fa-home"></i>&nbsp;HOME</a></li>
+      <li><a href="#about" onclick="toggleMenu();"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;ABOUT ME</a></li>
+      <!--<li><a href="#study" onclick="toggleMenu();"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;SKILLS</a></li>-->
+      <li><a href="#projects" onclick="toggleMenu();"><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;PROJECTS</a></li>
+      <li><a href="#contact" onclick="toggleMenu();"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;CONTACT ME</a></li>
+    </ul>
+  </div>
   <div class="container-2">
-    <img class="top-cloud" src="img/cloud.png" alt="Cloud">
-    <img class="b3-cloud" src="img/cloud.png" alt="Cloud">
-    <h1>I'm Hima </h1>
-    <h2>WEB DEVELOPER | ASPIRING DATA ANALYST</h2>
-    <img class="bottom-cloud" src="img/cloud.png" alt="Cloud">
-    <img class="b2-cloud" src="img/cloud.png" alt="Cloud">
-    <img src="img/mountain.png" alt="Mountain" class="mountain">
+    <div class="c21">
+      <img src="./img/ico.png" alt="icon">
+    </div>
+    <div class="c22">
+      <h2>HIMA RANI MATHEWS</h2>
+      <h3>FRONTEND WEB DEVELOPER | ASPIRING DATA SCIENTIST</h3>
+      <h3><a href="https://github.com/HimaRaniMathews"><i class="fa fa-github faa" style="font-size:30px"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/hima-rani-mathews/"><i class="fa fa-linkedin-square  faa" style="font-size:30px"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/hima_mathews"><i class="fa fa-twitter  faa" style="font-size:30px"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/himaranimathews/"><i class="fa fa-facebook  faa" style="font-size:30px"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/himaranimathews/"><i class="fa fa-instagram  faa" style="font-size:30px"></i></a>
+      </h3>
+    </div>
   </div>
 
-  <div class="container-3">
+  <div class="container-3" id="about">
     <div class="heading-3">
       <h1>ABOUT ME&nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
     </div>
@@ -49,15 +67,46 @@
     </div>
   </div>
 
-  <div class="container-4">
-    <div class="c3 r1">
+  <div class="container-4" id="projects">
+    <h1>My PROJECTS</h1>
 
+    <div class="c4 r1">
+      <img class="imgc42" src="./img/JavaScript Mini Projects.png" alt="PetsWorld">
+      <h3>JavaScript Mini Projects</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend nisi ac massa porttitor, et iaculis sapien hendrerit. Morbi viverra in augue ut tristique. Donec posuere iaculis egestas. Cras eget accumsan odio, ut ultricies
+        dolor. </p>
     </div>
-    <div class="c3 r2">
 
+    <div class="c4 r1">
+      <img class="imgc41" src="./img/PetsWorld.png" alt="PetsWorld">
+      <h3>PETSWORLD</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend nisi ac massa porttitor, et iaculis sapien hendrerit. Morbi viverra in augue ut tristique. Donec posuere iaculis egestas. Cras eget accumsan odio, ut ultricies
+        dolor. </p>
     </div>
-    
+
+    <div class="c4 r3">
+      <img class="imgc42" src="./img/ReactJS Mini Projects.png" alt="PetsWorld">
+      <h3>ReactJS Mini Projects</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend nisi ac massa porttitor, et iaculis sapien hendrerit. Morbi viverra in augue ut tristique. Donec posuere iaculis egestas. Cras eget accumsan odio, ut ultricies
+        dolor.</p>
+    </div>
   </div>
+
+  <div class="container-5" id="contact">
+    <div class="heading-3">
+      <h1>ABOUT ME&nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
